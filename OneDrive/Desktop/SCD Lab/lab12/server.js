@@ -18,9 +18,9 @@ connection.once('open', () => {
 app.use(cors());
 app.use(express.json());
 
-const UserRouter = require('./routes/User');
+const UserRouter = require('./routes/user');
 
-app.use('/User', UserRouter)
+app.use('/user', UserRouter)
 app.listen(port, () => {
     console.log(`Server is running on port: ${port}`);
 });
