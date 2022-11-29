@@ -7,15 +7,15 @@ describe("Test the root path", () => {
     {
     const response = request(app).post("http://localhost:8000/User/add"
     ).send ({
-    "Name": "Usman",
-    "Email": "usman@gmail.com",
-    "Age": 21,
-    "Contact": 033
+    "Name": "Mahad",
+    "Email": "mahad@gmail.com",
+    "Age": 211,
+    "Contact": 023
     })
     expect(response.statusCode).toBe(200);
     })
 
-   describe("Test the root path",()=>
+   describe("Test ",()=>
     {
         test("It should response the POST method",()=>
         {
@@ -31,7 +31,7 @@ describe("Test the root path", () => {
     {
     const response = request(app).post("http://localhost:8000/User/add"
     ).send ({
-    "Name": "Usman"
+    "Name": "Mahad"
     })
     expect(response.statusCode).toBe(200);
     })
